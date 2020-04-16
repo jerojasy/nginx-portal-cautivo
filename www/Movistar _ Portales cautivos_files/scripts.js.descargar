@@ -1,0 +1,50 @@
+function loadAll()
+{
+	$("a.info-trigger").on("click",function(event){
+        event.stopPropagation();
+        $(this).next().fadeIn("slow");
+           
+    });
+
+
+	$('a.details').click(function() {
+		
+		var $this = $(this);
+		var $thisContent = $this.next();
+		var textClose = "Ocultar términos y condiciones";
+		var textOpen = "Mostrar términos y condiciones";
+
+		if($this.hasClass('active')){
+			$this.removeClass('active').text(textOpen);
+			$thisContent.slideUp();
+		} else {
+			var $active = $this.closest('.data-module.plan').find(".details.active");
+			$active.next().slideUp();
+			$active.removeClass('active').text(textOpen);
+			$this.addClass('active').text(textClose);
+			$thisContent.slideDown();
+		}
+	});
+
+
+	$(window).click(function() {        
+
+        if (true) {
+        	$('.tooltip-info').fadeOut(500);
+        }
+
+    });
+
+    $(".green-button").on("click",function(event){
+    	$(this).parent().html('<a class="disabled"><i class="fa fa-circle-o-notch fa-spin"></i></a>');
+    })
+
+    $(".big-button").on("click",function(event){
+    	$(this).parent().html('<strong class="big-mid loading"><i class="fa fa-circle-o-notch fa-spin fa-4x"></i></strong>');
+    })
+
+    $(".big-button-b").on("click",function(event){
+    	$(this).parent().html('<strong class="loading"><i class="fa fa-circle-o-notch fa-spin fa-4x"></i></strong>');
+    })
+}
+$(document).ready(loadAll);
