@@ -119,6 +119,18 @@ header {
 }
 
 /* END MODAL */
+.armaprepago {
+    margin-top: 5px;
+    background-color: #5ac600;
+    text-align: center;
+    padding: 2px;
+}
+
+.armaprepago a {
+    color: white;
+    font-weight: bold;
+    margin: 0px 5% 0px 5%;
+}
 
 footer {
     background: #005c84;
