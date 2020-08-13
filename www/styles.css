@@ -124,6 +124,7 @@ header {
     background-color: #5ac600;
     text-align: center;
     padding: 2px;
+    display: none;
 }
 
 .armaprepago a {
