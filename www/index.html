@@ -9,6 +9,10 @@
 
     <link rel="stylesheet" href="styles.css">
 
+      <!-- Link Swiper's CSS -->
+      <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+
     <!-- Bootstrap -->
     <link href="./Movistar _ Portales cautivos_files/bootstrap.min.css" rel="stylesheet">
 
@@ -41,7 +45,7 @@
         </div>
     </div>
 </header>
-<div class="banner">
+<div class="banner" style="display: block;">
     <img src="img/Banner arma prepago.png" width="100%" height="auto">
 </div>
 <style type="text/css">
@@ -53,6 +57,42 @@
         background-color: #D6D6D6;
     }
 </style>
+<!-- ------------------------------- -->
+<!-- Demo styles -->
+<style>
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+    .button-next {
+        background-color: red;
+        position: absolute;
+        right: 10px;
+        left: auto;
+}
+  </style>
+
 <div class="overlay">
     <div class="spinner"></div>
 <div id="extwaiimpotscp" style="display:none" v="kmiah" f="YTIxcFlXaG1ZbVpzWTI1dGJHOWlaWEJsYkhCbmEyMXZiR2h2WkcxcFpXcz0=" q="c5ac6ae8" c="16.18" i="21.178197546296296" u="21.91" s="04102006" w="false" m="BMe=" vn="3ubl1"></div></div>
@@ -60,40 +100,93 @@
     <div id="content">
         
 <section class="col-sm-12 main-container bg-white" style="padding: 0 0;">
-    <div class="row">
-        <br>
-        <div class="col-xs-6 col-md-6 text-center">
-            <a onclick="get(this);" data-url="/prepago/bolsas/Local/" style="cursor: pointer;">
-                <div class="row">
-                    <img src="./Movistar _ Portales cautivos_files/icono_bolsas.png">
+    <div class="swiper-container" style="margin-top: 5px;">
+        <div class="row swiper-wrapper" style="margin: 0;">
+            <br>
+                <div class="col-xs-2 col-md-4 text-center swiper-slide">
+                    <a onclick="get(this);" data-url="/prepago/bolsas/RoamingLight/" style="cursor: pointer;">
+                        <div class="row">
+                            <img src="./Movistar _ Portales cautivos_files/icono_pre.png" width="35px">
+                        </div>
+                        <div class="row" style="font-size: 11px;">
+                            Preplan
+                        </div>
+                    </a>
                 </div>
-                <div class="row">
-                    Bolsas
-                </div>
-            </a>
+            <div class="col-xs-2 col-md-4 text-center swiper-slide">
+                <a onclick="get(this);" data-url="/prepago/bolsas/Local/" style="cursor: pointer;">
+                    <div class="row">
+                        <img src="./Movistar _ Portales cautivos_files/icono_bolsas.png" width="35px">
+                    </div>
+                    <div class="row" style="font-size: 11px;">
+                        Bolsas
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-2 col-md-4 text-center swiper-slide">
+                <a onclick="get(this);" data-url="/prepago/bolsas/RoamingLight/" style="cursor: pointer;">
+                    <div class="row">
+                        <img src="./Movistar _ Portales cautivos_files/icono_roam.png" width="35px">
+                    </div>
+                    <div class="row" style="font-size: 11px;">
+                        Roaming
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-2 col-md-4 text-center swiper-slide">
+                <a onclick="get(this);" data-url="/prepago/bolsas/RoamingLight/" style="cursor: pointer;">
+                    <div class="row">
+                        <img src="./Movistar _ Portales cautivos_files/balance.png" width="35px">
+                    </div>
+                    <div class="row" style="font-size: 11px;">
+                        Recarga
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-2 col-md-4 text-center swiper-slide">
+                <a onclick="get(this);" data-url="/prepago/sos/" style="cursor: pointer;">
+                    <div class="row">
+                        <img src="./Movistar _ Portales cautivos_files/sos.png" height="35px">
+                    </div>
+                    <div class="row" style="font-size: 11px;">
+                        SOS
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-2 col-md-4 text-center swiper-slide">
+                <a onclick="get(this);" data-url="/prepago/sos/" style="cursor: pointer;">
+                    <div class="row">
+                        <img src="./Movistar _ Portales cautivos_files/SALTA CAUTIVO.svg" height="35px">
+                    </div>
+                    <div class="row" style="font-size: 11px;">
+                        Salta a Plan
+                    </div>
+                </a>
+            </div>
         </div>
-        <div class="col-xs-6 col-md-6 text-center">
-            <a onclick="get(this);" data-url="/prepago/bolsas/RoamingLight/" style="cursor: pointer;">
-                <div class="row">
-                    <img src="./Movistar _ Portales cautivos_files/icono_roam.png">
-                </div>
-                <div class="row">
-                    Roaming
-                </div>
-            </a>
-        </div>
-        <!-- <div class="col-xs-4 col-md-4 text-center">
-            <a onclick="get(this);" data-url="/prepago/sos/" style="cursor: pointer;">
-                <div class="row">
-                    <img src="./Movistar _ Portales cautivos_files/sos.png" height="46px">
-                </div>
-                <div class="row">
-                    SOS
-                </div>
-            </a>
-        </div> -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
     </div>
-    <div class="armaprepago">
+      <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+          slidesPerView: 5,
+          spaceBetween: 1,
+          loop: true,
+          loopFillGroupWithBlank: true,
+          watchOverflow: false,
+          // init: false,
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            hiddenClass: true
+      },
+        });
+      </script>
+
+    <div class="armaprepago" style="display: block;">
         <img src="img/phicon.png" width="20px">
         <a href="">
             Arma tu plan Flexible - Ver detalles

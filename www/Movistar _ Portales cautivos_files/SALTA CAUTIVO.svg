@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="155.576" height="155.576" viewBox="0 0 155.576 155.576">
+  <g id="SALTA_CAUTIVO" data-name="SALTA CAUTIVO" transform="translate(-910 -8462)">
+    <g id="icn_Top-up_send-balance" data-name="icn/Top-up/send-balance" transform="translate(910 8462)">
+      <g id="_icn-service-send-balance" data-name="→ icn-service-send-balance">
+        <g id="Union">
+          <path id="Fill_1_Copy" data-name="Fill 1 Copy" d="M77.789,0c49.266,0,77.787,24.68,77.787,77.788s-28.521,77.788-77.787,77.788S0,130.9,0,77.788,28.521,0,77.789,0Z" transform="translate(0 0)" fill="#00a9e0"/>
+          <path id="Stroke_4" data-name="Stroke 4" d="M4.108,8.216H33.1A4.108,4.108,0,0,0,33.1,0H4.108a4.108,4.108,0,0,0,0,8.216Z" transform="matrix(-0.017, -1, 1, -0.017, 114.896, 98.406)" fill="#fff"/>
+          <path id="Stroke_5" data-name="Stroke 5" d="M24.693,28.222a6.539,6.539,0,0,0,.025-9.248L7.019,1.209A4.108,4.108,0,1,0,1.2,7.008L17.707,23.579,1.211,39.985A4.108,4.108,0,0,0,7.005,45.81L21.778,31.118Z" transform="matrix(-0.017, -1, 1, -0.017, 95.197, 84.163)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+    <g id="Rectángulo_109" data-name="Rectángulo 109" transform="translate(944 8486)" fill="none" stroke="#fff" stroke-width="4">
+      <rect width="58" height="97" rx="13" stroke="none"/>
+      <rect x="2" y="2" width="54" height="93" rx="11" fill="none"/>
+    </g>
+    <circle id="Elipse_8" data-name="Elipse 8" cx="5" cy="5" r="5" transform="translate(970 8563)" fill="#fff"/>
+  </g>
+</svg>
