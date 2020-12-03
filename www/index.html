@@ -8,6 +8,7 @@
     <title>Movistar | Portales cautivos</title>
 
     <link rel="stylesheet" href="styles.css">
+    
 
       <!-- Link Swiper's CSS -->
       <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
@@ -15,7 +16,7 @@
 
     <!-- Bootstrap -->
     <link href="./Movistar _ Portales cautivos_files/bootstrap.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="font-awesome/css/all.min.css">
     <script type="text/javascript">
         
     </script>
@@ -36,15 +37,145 @@
                 </div>
             </div> -->
 <!-- END MODAL -->
+<style>
+    body {
+      margin: 0;
+      
+    }
+    
+    .sidebar {
+        overflow: hidden;
+      margin: 0;
+      padding: 0;
+      width: 200px;
+      background-color: #f1f1f1;
+      position: fixed;
+      height: 100%;
+      overflow: auto;
+      z-index: 999;
+    }
+    
+    .sidebar a {
+      display: block;
+      color: #005c84;
+      padding: 8px;
+      text-decoration: none;
+      text-align-last: left;
+      border-bottom: solid 1px rgb(207, 207, 207);
+    }
+     
+    .sidebar a.active {
+      background-color: #00A9E0;
+      color: white;
+    }
+    
+    .sidebar a:hover:not(.active) {
+      background-color: #555;
+      color: white;
+    }
+    
+    div.content {
+      margin-left: 200px;
+      padding: 1px 16px;
+      height: 1000px;
+    }
+    
+    i {
+        margin-right: 10px;
+    }
+    @media screen and (max-width: 350px) {
+      .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+      .sidebar a {float: left;}
+      div.content {margin-left: 0;}
+    }
+    
+    @media screen and (max-width: 400px) {
+      .sidebar a {
+        text-align: center;
+        float: none;
+      }
+    }
+
+/* Collapsible CSS */
+
+.collapsible {
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #00A9E0;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: block;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.collapsible.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: transparent;
+  margin-left: 20px !important;
+  
+}
+.mostrar{
+    display: none;
+}
+    </style>
+ <div class="sidebar" id="menu">
+    <a class="active" href="#home">Bienvenido <strong>Usuario</strong><br>
+    <p style="color: black; font-size: 12px;">Línea Asociada: 56941971111</p></a>
+    <!-- <a href="">Línea Asociada: linea</a> -->
+    <a href="#"><i class="fas fa-home" style="color: #65c810;"></i>Página Principal</a>
+    <a href="#"><i class="fas fa-shopping-bag" style="color: #15AABF;"></i>Mis Bolsas Disponibles</a>
+    <a href="#"><i class="far fa-chart-bar" style="color: #da52ac;"></i>Saldo Disponible</a>
+    <a href="#" class="collapsible"><i class="fas fa-shopping-cart" style="color: #e00000;"></i>Compra de Bolsas</a>
+    <div class="content">
+        <ul>
+            <li><a href="">Normales</a></li>
+            <li><a href="">Roaming</a></li>
+            <li><a href="">Recarga</a></li>
+            <li><a href="">Preplan</a></li>
+            <li><a href="">SOS</a></li>
+          </ul>
+    </div>
+    <a href="#"><i class="fas fa-question-circle" style="color: #BE4BDB;"></i>Ayuda</a>
+</div>   
 <header style="background-color: #00A9E0;">
     <div class="container" style="background-color: #00A9E0;">
         <div class="row">
             <div class="col-xs-4">
                 <a href="http://mi1.portal.movistar.cl/home/"><img src="./Movistar _ Portales cautivos_files/logo_movistar.png" alt="Logo Movistar"></a>
             </div>
+            <div class="col " style="text-align: right;">
+                <i class="fas fa-bars" id="btnMenu"></i>
+            </div>
         </div>
     </div>
 </header>
+
+  
 <div class="banner" style="display: block;">
     <img src="img/Banner arma prepago.png" width="100%" height="auto">
 </div>
@@ -89,8 +220,8 @@
 .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
     right: 0px;
     left: auto;
-    background: #ffffff;
-    padding: 30px 35px;
+    background: #ececec;
+    padding: 30px 25px;
     top: -5px;
     margin: 5px 0 0 0;
 }
@@ -99,10 +230,40 @@
     right: auto;
     left: 0px;
     left: auto;
-    background: #ffffff;
-    padding: 30px 35px;
+    background: #ececec;
+    padding: 30px 25px;
     top: -5px;
     margin: 5px 0 0 0;
+}
+
+.swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after {
+    font-size: 25px
+}
+.swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after {
+    font-size: 25px
+}
+
+.swiper-button-next-unique{
+    background-color: red;
+    width: 5%;
+    margin-top: 0px;
+position: absolute;
+top: 50%;
+right: -40px;
+width: 45px;
+height: 45px;
+transform: translateY(-50%);
+}
+.swiper-button-prev-unique{
+    background-color: red;
+    width: 5%;
+    position: absolute;
+  top: 50%;
+  left: -40px;
+  width: 45px;
+  height: 45px;
+  transform: translateY(-50%);
+  margin-top: 0px;
 }
   </style>
 
@@ -171,15 +332,16 @@
                     <div class="row">
                         <img src="./Movistar _ Portales cautivos_files/SALTA CAUTIVO.svg" height="35px">
                     </div>
-                    <div class="row" style="font-size: 11px;">
+                    <div class="row" style="font-size: 10.5px;">
                         Salta a Plan
                     </div>
                 </a>
             </div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+
     </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
       <!-- Swiper JS -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- Initialize Swiper -->
@@ -188,13 +350,10 @@
           slidesPerView: 5,
           spaceBetween: 1,
           loop: true,
-          loopFillGroupWithBlank: true,
-          watchOverflow: false,
           // init: false,
           navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
-            hiddenClass: true
       },
         });
       </script>
@@ -378,6 +537,28 @@
         </div>
     </div>
 </footer>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+            content.style.maxHeight = null;
+            } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+            } 
+        });
+        }
+
+        document.getElementById("btnMenu").addEventListener("click",function(){
+  
+        document.getElementById("menu").classList.toggle("mostrar");
+});
+
+    </script>
 
 
 </body></html>
